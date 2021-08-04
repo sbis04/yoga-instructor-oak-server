@@ -1,0 +1,3 @@
+[submodule "OAKD_depthai_blazepose"]
+	path = OAKD_depthai_blazepose
+	url = https://github.com/Soumi7/OAKD_depthai_blazepose
