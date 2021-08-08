@@ -22,6 +22,8 @@ You can use this script locally, follow the instructions below to get started.
     python -m pip install -r OAKD_depthai_blazepose/requirements.txt
     ```
 
+    > **TIP:** You can use a conda environment to install the requirements.
+
 * Run the script using:
 
     ```sh
@@ -62,6 +64,17 @@ You can use this script locally, follow the instructions below to get started.
     > ```
 
     This command generates a `PID`, copy the process identifier to stop the script easily by passing to the `oak_dispose.sh` script.
+
+If you are using a `conda` environment in your device, you'll have to update the script (only `oak_starter.sh` & `oak_changeover.sh` needs to be modified) to **activate** the correct environment.
+
+```sh
+# Before running the python command
+. ~/.zshrc # for macOS using zsh terminal
+# . ~/bashrc # If using bash terminal
+conda activate <env>
+
+# python3 ....
+```
 
 ## Submodules
 
