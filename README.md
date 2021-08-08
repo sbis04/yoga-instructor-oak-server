@@ -34,7 +34,7 @@ You can use this script locally, follow the instructions below to get started.
     > ./oak_starter.sh mountain beginners
     > ```
 
-    This command generates a `PID`, copy the process identifier to stop the script easily.
+    This command generates a `PID`, copy the process identifier to stop the script easily by passing to the `oak_dispose.sh` script.
 
 * Stop the script using the following:
 
@@ -42,11 +42,26 @@ You can use this script locally, follow the instructions below to get started.
     ./oak_dispose.sh <PID>
     ```
 
-    > Replace the PID with the one generated during the start of the script, for example:
+    > Replace the **PID** with the one generated during the start of the script, for example:
     > 
     > ```sh
     > ./oak_dispose.sh 3386
     > ```
+
+* Changeover the script (stop the previously running script and start a new one) using:
+
+    ```sh
+    ./oak_changeover.sh <PID> <pose_name> <track_name>
+    ```
+
+    > Replace the **PID** with the one generated during the start of the previous script, 
+    > and pass the new pose name and the track name to start the new script
+    > 
+    > ```sh
+    > ./oak_changeover.sh 3387 mountain beginners
+    > ```
+
+    This command generates a `PID`, copy the process identifier to stop the script easily by passing to the `oak_dispose.sh` script.
 
 ## Submodules
 
