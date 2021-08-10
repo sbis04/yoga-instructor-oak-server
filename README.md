@@ -4,6 +4,24 @@ This helps in running the Blazepose OAK-D script in background (so that terminal
 
 The script is being used with [Sofia](https://github.com/sbis04/yoga-instructor) app.
 
+## Working model
+
+The main hardware components that we have used for building the setup for this project is as follows:
+
+- OAK-D (OpenCV AI Kit)
+- Raspberry Pi 2B
+- Mobile device (Android API level 23 or higher)
+
+An overview of our entire setup is given below:
+
+![](images/Sofia_oak_overview.png)
+
+- The **OAK-D** is connected via a USB cable to the Raspberry Pi device.
+- The **Raspberry Pi** can be powered directly from the mobile (if it has a type C port available), otherwise it has to be connected to the power socket (using battery power is not ideal in this case).
+- The Sofia **mobile app** communicates with the Raspberry Pi device via an SSH connection (it's a two-way communication).
+- The mobile app (connected to a WiFi) and the Raspberry Pi (connected via ethernet or WiFi) should be connected to the same network.
+- Various cloud services are utilized by the mobile app for database, storage, intent recognition for the voice assistant & video streaming (along with encoding and decoding of the media).
+
 ## Usage
 
 You can use this script locally, follow the instructions below to get started.
